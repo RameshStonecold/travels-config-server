@@ -1,3 +1,11 @@
 spring:
   profiles:
-    active: user-dev,bookings-dev
+    active: user-dev
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
