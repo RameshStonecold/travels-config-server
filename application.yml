@@ -1,8 +1,8 @@
-#spring:
-#  profiles:
-#    active: user-dev
-#
-#
+spring:
+  profiles:
+    active: test
+
+
 #eureka:
 #  client:
 #    service-url:
